@@ -1,0 +1,95 @@
+#carousel > div {
+	backface-visibility: hidden;
+}
+.container {
+  position: relative;
+  width: 550px;
+  height: 250px;
+  /* border: 1px dotted black; */
+  perspective: 600px;
+}
+
+#carousel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: translateZ(-300px);
+  transition: all 1s ease-in;
+}
+#carousel > div {
+  display: block;
+  position: absolute;
+  top: 55px;
+  left: 170px;
+  width: 200px;
+  object-fit: cover;
+  border: 1px solid #000a35;
+	border-radius: 0.5em;
+	overflow: hidden;
+  /* backface-visibility: hidden; */
+}
+#carousel {animation: spin 35s infinite linear;}
+
+img {
+	position: relative;
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	aspect-ratio: 3 / 2;
+	object-fit: cover;
+}
+
+/* 40deg = 360/9 */
+#carousel div:nth-child(1) { transform: rotateY(   0deg ) translateZ( 300px ); }
+#carousel div:nth-child(2) { transform: rotateY(  40deg ) translateZ( 300px ); }
+#carousel div:nth-child(3) { transform: rotateY(  80deg ) translateZ( 300px ); }
+#carousel div:nth-child(4) { transform: rotateY( 120deg ) translateZ( 300px ); }
+#carousel div:nth-child(5) { transform: rotateY( 160deg ) translateZ( 300px ); }
+#carousel div:nth-child(6) { transform: rotateY( 200deg ) translateZ( 300px ); }
+#carousel div:nth-child(7) { transform: rotateY( 240deg ) translateZ( 300px ); }
+#carousel div:nth-child(8) { transform: rotateY( 280deg ) translateZ( 300px ); }
+#carousel div:nth-child(9) { transform: rotateY( 320deg ) translateZ( 300px ); }
+
+@keyframes spin {
+	from { transform: rotateY(0); }
+	to { transform: rotateY(360deg); }
+}
+/* Pause animation */
+#carousel:hover {animation-play-state: paused;} 
+
+.active {transform: scale(2);}
+
+* > {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: #fff;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: #fff;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body {
+    background-color: #fff;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body {
+    background-color: #fff;
+  }
+}

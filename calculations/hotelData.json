@@ -1,0 +1,44 @@
+[
+    {
+        "id" : 1,
+        "name" : "Hotel Destino",
+        "rate" : 2000,
+        "features" : [
+            "Spa",
+            "Car Parking",
+            "Laundry service",
+            "Meeting facilities",
+            "Tour & excursions",
+            "24-Hour doctor on call"
+        ],
+        "thumbnail" : "../../src/images/hotel1.jpg"
+    },
+    {
+        "id" : 2,
+        "name" : "Knights Inn Hotel",
+        "rate" : 3800,
+        "features" : [
+            "Bike & horse cart rental",
+            "Free wireless Internet access",
+            "Complimentary use of hotel Bus Service",
+            "Laundry services",
+            "Airport transfers",
+            "100 Seating capacity restaurant"
+        ],
+        "thumbnail" : "../../src/images/hotel1.jpg"
+    },
+    {
+        "id" : 3,
+        "name" : "Hotel Moody Moon",
+        "rate" : 3000,
+        "features" : [
+            "100 Seating capacity restaurant",
+            "Public computer",
+            "Outside catering service",
+            " 35 Seating private air-conditioning",
+            "24-Hour room service",
+            "Babysitting on request"
+        ],
+        "thumbnail" : "../../src/images/hotel1.jpg"
+    }
+]
